@@ -36,7 +36,7 @@
     margin-left:20px;
 }
 body{
-    background-image: url("https://cdn.dribbble.com/users/720472/screenshots/2177275/gif.gif");
+    background-image: url("https://wallpaperset.com/w/full/1/d/9/223149.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,10 +53,10 @@ body{
     flex-direction: column;
     align-content: center;
 }
-.search{
-  /* margin-top: 200px;   */
+/* .search{
+  /* margin-top: 200px;   
    
-}
+} */
 .search-bar{
  all:unset;
  color: rgb(9, 5, 5);
