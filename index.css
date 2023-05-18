@@ -36,7 +36,7 @@
     margin-left:20px;
 }
 body{
-    background-image: url("https://images.unsplash.com/photo-1541359927273-d76820fc43f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+    background-image: url("https://cdn.dribbble.com/users/720472/screenshots/2177275/gif.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@ body{
    justify-content: center;
      width: 100%;
      height: 100vh;
-    background-color:#030608 ;
+    background-color:#03060800 ;
     flex-wrap: nowrap;
     flex-direction: column;
     align-content: center;
@@ -112,7 +112,7 @@ body{
     to {left: 300px;}
 }
 .heading{
-    background: url(https://i.etsystatic.com/32909254/r/il/d78eae/3478479344/il_1080xN.3478479344_2pxe.jpg)   -20px -20px no-repeat;
+    background: url(https://68.media.tumblr.com/ea257d3b49574b8501eea3a76bd4e06a/tumblr_opu06kiosG1wppsoyo1_500.gif)   -20px -20px no-repeat;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     /* Below is not needed */
