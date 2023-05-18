@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container">
+        <div class="web-name">IMAGE GENERATOR</div> 
+        
+    </div>
+    <!-- body -->
+    <div class="body-continer">
+       
+    <div class="igalary">
+        <!-- <form action="#" method="post"> -->
+       <div><label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name...">
+    </div> 
+    <div>
+      <label for="file">Image</label>
+      <input type="file" id="uploadInput" name="file"accept="image/*">
+      </div>
+      
+      <img id="preview"  alt="Preview">
+        <label for="Des">Description:</label>
+        <textarea id="Des" name="Des" rows="5" cols="50"></textarea>
+        <div class="button-container">
+            <a type="button"  class="button" >Upload</a>
+        </div>
+    </div>
+    
+    <script>
+      function handleFileSelect(event) {
+        const file = event.target.files[0]; 
+        const reader = new FileReader(); 
+        
+        reader.onload = function(e) {
+          const previewImage = document.getElementById('preview');
+          previewImage.style.visibility="visible";
+          previewImage.style.height="250px";
+          previewImage.style.width="250px";
+          previewImage.src = e.target.result;
+        };
+        
+        reader.readAsDataURL(file); 
+      }
+      const fileInput = document.getElementById('uploadInput');
+      fileInput.addEventListener('change', handleFileSelect, false);
+    </script>
+</div>
+</body>
+</html>
