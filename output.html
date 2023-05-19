@@ -39,7 +39,7 @@
        
     
 
-        <form action="#" method="post">
+        <form action="#" method="post" class="forms">
           <div class="igalary">
         <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div>
         <div class="web-name">Upload your image here...</div>
@@ -66,7 +66,7 @@
         <textarea name="Description" rows="5" cols="45" placeholder="Enter Your Image Description here..."></textarea>
 
         <div class="button-container">
-        <a type="button"  class="button" >Upload</a>
+        <a type="button"  class="button" onclick="fun()" >Upload</a>
         </div>
       </div>
       </form>
@@ -91,6 +91,13 @@
       }
       const fileInput = document.getElementById('uploadInput');
       fileInput.addEventListener('change', handleFileSelect, false);
+
+function fun(){
+let form = document.querySelector('.forms');
+
+let data = getFormData(form);
+
+console.log(JSON.stringify(data));}
     </script>
 </div>
 </body>
