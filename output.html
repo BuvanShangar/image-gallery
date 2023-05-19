@@ -10,6 +10,9 @@
 
 <body>
     <!-- header -->
+
+    <div class="header">
+
     <div class="container">
 
         <div class="web-name">IMAGE GENERATOR</div>
@@ -21,40 +24,42 @@
         
     </div>
 
+
       <div class="web-name">IMAGE GENERATOR</div>
       <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div>
-      
       <div class="nav">
-          <a href="index.html" class="nav-btn">Home</a>
-          <a href="output.html" class="nav-btn">Add New</a>
+        <a href="output.html" class="nav-btn">Home</a>
+          <a href="index.html" class="nav-btn">Search</a>
+          <a href="gallery.html" class="nav-btn">Gallery</a>
+          
       </div>
+    </div>
     <!-- body -->
-    
+    <div class="body-continer">
        
     <div class="igalary">
-   
-             <div>
-              <label for="name">Name:</label>
-             <input type="text" id="name" placeholder="Enter your name...">
-            </div>     
-              <div>
-                <label for="Title">Title:</label>
-               <input type="text" id="Title" placeholder="Enter your Title...">
-              </div>
-               <div>      
-             <label for="file">Image:</label>
-             <input type="file" id="uploadInput" name="file"accept="image/*">
-            </div>
-            <div>
-            <img id="preview"  alt="Preview">
-            </div>
-            <div class="inp-cnt">
-            <label for="Des">Description:</label><br>
-            <textarea id="Des" name="Des"  rows="5" cols="40" placeholder="Write Here..."></textarea>
-            </div>
-            <div class="button-container">
-            <a type="button"  class="button" >Upload</a>
-            </div>
+        <!-- <form action="#" method="post"> -->
+
+          <div class="input-field">
+       <label><b><h4>Name:</h4></b></label>
+       <input type="text" required="required">
+      </div>
+      <div class="input-field">
+        <label><b><h4>Title:</h2></b></label>
+        <input type="text" required="required">
+       </div>
+       <label><b><h4>Image</h4></b></label>
+       <input type="file" id="uploadInput" accept="image/*">
+      
+       <img id="preview"  alt="Preview">
+       <label><b><h4>Description</h4></b></label>
+       <textarea name="Des" rows="5" cols="50"></textarea>
+        <div class="button-container">
+        <a type="button"  class="button" >Upload</a>
+        </div>
+      </div>
+    </div>
+    
     <script>
       function handleFileSelect(event) {
         const file = event.target.files[0]; 
