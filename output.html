@@ -37,27 +37,41 @@
     <!-- body -->
     <div class="body-continer">
        
-    <div class="igalary">
-        <!-- <form action="#" method="post"> -->
+    
 
-          <div class="input-field">
-       <label><b><h4>Name:</h4></b></label>
-       <input type="text" required="required">
-      </div>
-      <div class="input-field">
-        <label><b><h4>Title:</h2></b></label>
-        <input type="text" required="required">
-       </div>
-       <label><b><h4>Image</h4></b></label>
-       <input type="file" id="uploadInput" accept="image/*">
-      
-       <img id="preview"  alt="Preview">
-       <label><b><h4>Description</h4></b></label>
-       <textarea name="Des" rows="5" cols="50"></textarea>
+        <form action="#" method="post">
+          <div class="igalary">
+        <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div>
+        <div class="web-name">Upload your image here...</div>
+        <div class="input-field">
+        <label for="name">Name:</label>
+        <input type="text" required="required" name="name" placeholder="Enter your name here...">
+        </div>
+
+        <div class="input-field">
+        <label>Title:</label>
+        <input type="text" required="required" placeholder="Enter your name title...">
+        </div>
+
+        <div class="input-field">
+        <label for="image">Image:</label>
+        <input type="file" id="uploadInput" accept="image/*" name="image" >
+        </div>
+
+        <div>
+        <img id="preview"  alt="Preview">
+        </div>
+
+        <label for="Description">Description:</label>
+        <textarea name="Description" rows="5" cols="45" placeholder="Enter Your Image Description here..."></textarea>
+
         <div class="button-container">
         <a type="button"  class="button" >Upload</a>
         </div>
       </div>
+      </form>
+      
+    
     </div>
     
     <script>
