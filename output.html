@@ -11,6 +11,7 @@
 <body>
     <!-- header -->
     <div class="container">
+
         <div class="web-name">IMAGE GENERATOR</div>
         <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div> 
         <div class="nav">
@@ -19,27 +20,41 @@
       </div>
         
     </div>
+
+      <div class="web-name">IMAGE GENERATOR</div>
+      <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div>
+      
+      <div class="nav">
+          <a href="index.html" class="nav-btn">Home</a>
+          <a href="output.html" class="nav-btn">Add New</a>
+      </div>
     <!-- body -->
-    <div class="body-continer">
+    
        
     <div class="igalary">
-        <!-- <form action="#" method="post"> -->
-       <div><label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Enter your name...">
-    </div> 
-    <div>
-      <label for="file">Image</label>
-      <input type="file" id="uploadInput" name="file"accept="image/*">
-      </div>
-      
-      <img id="preview"  alt="Preview">
-        <label for="Des">Description:</label>
-        <textarea id="Des" name="Des" rows="5" cols="50"></textarea>
-        <div class="button-container">
+   
+             <div>
+              <label for="name">Name:</label>
+             <input type="text" id="name" placeholder="Enter your name...">
+            </div>     
+              <div>
+                <label for="Title">Title:</label>
+               <input type="text" id="Title" placeholder="Enter your Title...">
+              </div>
+               <div>      
+             <label for="file">Image:</label>
+             <input type="file" id="uploadInput" name="file"accept="image/*">
+            </div>
+            <div>
+            <img id="preview"  alt="Preview">
+            </div>
+            <div class="inp-cnt">
+            <label for="Des">Description:</label><br>
+            <textarea id="Des" name="Des"  rows="5" cols="40" placeholder="Write Here..."></textarea>
+            </div>
+            <div class="button-container">
             <a type="button"  class="button" >Upload</a>
-        </div>
-    </div>
-    
+            </div>
     <script>
       function handleFileSelect(event) {
         const file = event.target.files[0]; 
