@@ -45,12 +45,12 @@
         <div class="web-name">Upload your image here...</div>
         <div class="input-field">
         <label for="name">Name:</label>
-        <input type="text" required="required" name="name" placeholder="Enter your name here...">
+        <input type="text" required="required" name="name" placeholder="Enter your name here..." id="name">
         </div>
 
         <div class="input-field">
         <label>Title:</label>
-        <input type="text" required="required" placeholder="Enter your name title...">
+        <input type="text" required="required" placeholder="Enter your name title..." id="title">
         </div>
 
         <div class="input-field">
@@ -63,7 +63,7 @@
         </div>
 
         <label for="Description">Description:</label>
-        <textarea name="Description" rows="5" cols="45" placeholder="Enter Your Image Description here..."></textarea>
+        <textarea name="Description" rows="5" cols="45" placeholder="Enter Your Image Description here..." id="Description"></textarea>
 
         <div class="button-container">
         <a type="button"  class="button" onclick="fun()" >Upload</a>
@@ -74,30 +74,30 @@
     
     </div>
     
-    <script>
-      function handleFileSelect(event) {
-        const file = event.target.files[0]; 
-        const reader = new FileReader(); 
+    <script src="output.js">
+//       function handleFileSelect(event) {
+//         const file = event.target.files[0]; 
+//         const reader = new FileReader(); 
         
-        reader.onload = function(e) {
-          const previewImage = document.getElementById('preview');
-          previewImage.style.visibility="visible";
-          previewImage.style.height="250px";
-          previewImage.style.width="250px";
-          previewImage.src = e.target.result;
-        };
+//         reader.onload = function(e) {
+//           const previewImage = document.getElementById('preview');
+//           previewImage.style.visibility="visible";
+//           previewImage.style.height="250px";
+//           previewImage.style.width="250px";
+//           previewImage.src = e.target.result;
+//         };
         
-        reader.readAsDataURL(file); 
-      }
-      const fileInput = document.getElementById('uploadInput');
-      fileInput.addEventListener('change', handleFileSelect, false);
+//         reader.readAsDataURL(file); 
+//       }
+//       const fileInput = document.getElementById('uploadInput');
+//       fileInput.addEventListener('change', handleFileSelect, false);
 
-function fun(){
-let form = document.querySelector('.forms');
+// function fun(){
+// let form = document.querySelector('.forms');
 
-let data = getFormData(form);
+// let data = getFormData(form);
 
-console.log(JSON.stringify(data));}
+// console.log(JSON.stringify(data));}
     </script>
 </div>
 </body>
