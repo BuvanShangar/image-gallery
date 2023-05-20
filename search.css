@@ -12,7 +12,7 @@ body{
     margin: 0 0 0 0;
 }
 
-.header{
+/* .header{
     position: fixed;
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@ body{
     width: 100%;
     height: 11vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 .search{
     flex-wrap: nowrap;
     display: flex;
@@ -65,11 +65,11 @@ body{
 }
 .container{
     display: flex;
-    background-color:gray;
+    background-color:rgb(77, 74, 74);
     flex-direction: row;
     align-content: right;
     margin: 0% 0% 0% 0%;
-    height: 100px;
+    height: 12vh;
     justify-content:space-between;
     align-items: center;
     
@@ -173,7 +173,7 @@ body{
 .web-name{
     font-size:x-large;
     font-weight: 900;
-    color: #A4EBF3;
+    color: #000000;
 }   
 .cont-header{
     font-size:xx-large;
