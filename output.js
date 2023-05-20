@@ -35,7 +35,7 @@ function handleFileSelect(event) {
     const Img = document.getElementById("uploadInput"); 
     // const file=Img.files[0];
     const ImgName=await ConvertToBase64(Img.files[0]);
-    const Des = document.getElementById("description").value;
+  //  const Des = document.getElementById("description").value;
 
     let formData = {
       name: `${Nam}`,
