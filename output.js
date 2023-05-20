@@ -51,6 +51,7 @@ async function fun() {
   };
 
  await fetch("https://image-generator-api.netlify.app/post", configObj)
+
     .then(async function (response) {
       return await response.json();
     })
