@@ -115,7 +115,8 @@ body{
     background-color: black;
     color: aliceblue;
     margin-right: 5px;
-    padding: 1vh 1vh 1vh 1vh;
+    /* padding: 1vh 1vh 1vh 1vh; */
+    padding: 1.3vh 1.3vh 1.3vh 1.3vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     /* display: flex;
@@ -135,7 +136,8 @@ body{
 }
 
 .nav-btn:hover{
-    background-color: #76cdcdc9;
+    background-color: #ffffffc9;
+    color: #000000;
 }
 .nav-btn:active {
     background-color:#bccad6 ;
