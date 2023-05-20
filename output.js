@@ -32,7 +32,7 @@ async function fun() {
   const Tit = document.getElementById("title").value;
   const Img = document.getElementById("uploadInput");
   const ImgName = await ConvertToBase64(Img.files[0]);
-  const Des = document.getElementById("description").value;
+  const Des = document.getElementById("Description").value;
 
   let formData = {
     name: `${Nam}`,
@@ -40,10 +40,9 @@ async function fun() {
     image: `${ImgName}`,
     description: `${Des}`
   };
-
   // method: "POST" is missing from the object below
   let configObj = {
-    method: "post",
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",
@@ -51,7 +50,7 @@ async function fun() {
     body: JSON.stringify(formData),
   };
 
-  fetch("https://image-generator-api.netlify.app/post", configObj)
+ await fetch("https://image-generator-api.netlify.app/post", configObj)
     .then(function (response) {
       return response.json();
     })
