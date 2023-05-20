@@ -45,6 +45,7 @@ function handleFileSelect(event) {
     
     // method: "POST" is missing from the object below
     let configObj = {
+      method:"post",
       headers: {
         "Content-Type": "application/json",
         "Accept": "application/json"

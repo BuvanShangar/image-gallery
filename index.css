@@ -129,6 +129,7 @@ body{
     background: url(https://i.pinimg.com/originals/05/c7/1b/05c71bb40a3f636c2707df44486a3ddd.gif)   -20px -20px no-repeat;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     /* Below is not needed */
     display:block;
     font-size: 200px;
