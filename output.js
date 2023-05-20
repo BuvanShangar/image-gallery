@@ -51,14 +51,14 @@ async function fun() {
   };
 
  await fetch("https://image-generator-api.netlify.app/post", configObj)
-    .then(function (response) {
-      return response.json();
+    .then(async function (response) {
+      return await response.json();
     })
-    .then(function (object) {
-      console.log(object);
+    .then(async function (object) {
+     await console.log(object);
     })
-    .catch(function (error) {
-      alert("Bad things! Ragnarők!");
-      console.log(error.message);
+    .catch(async function (error) {
+     await alert("Bad things! Ragnarők!");
+    await  console.log(error.message);
     });
 }
