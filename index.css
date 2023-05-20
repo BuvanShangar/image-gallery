@@ -31,12 +31,13 @@
     background-color: black;
     color: aliceblue;
     margin-right: 5px;
-    padding: 1vh 1vh 1vh 1vh;
+    padding: 1.3vh 1.3vh 1.3vh 1.3vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
 }
 .nav-btn:hover{
-    background-color: #76cdcdc9;
+    background-color: #ffffffc9;
+    color: #000000;
 }
 .nav-btn:active {
     background-color:#bccad6 ;
@@ -125,7 +126,7 @@ body{
     to {left: 300px;}
 }
 .heading{
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV6JjQ3erqqOcZAIKzWUW3JYSSvkSuWzaiEVzGUBN6WYqqgGRfIoSk5SPqDr5uSHN-wf8&usqp=CAU)   -20px -20px no-repeat;
+    background: url(https://i.pinimg.com/originals/05/c7/1b/05c71bb40a3f636c2707df44486a3ddd.gif)   -20px -20px no-repeat;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     /* Below is not needed */
