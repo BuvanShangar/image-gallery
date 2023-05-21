@@ -3,7 +3,7 @@ function handleFileSelect(event) {
   const reader = new FileReader();
 
   reader.onload = function (e) {
-    const previewImage = document.getElementById("preview");
+    var previewImage = document.getElementById("preview");
     previewImage.style.visibility = "visible";
     previewImage.style.height = "250px";
     previewImage.style.width = "250px";
@@ -17,10 +17,14 @@ fileInput.addEventListener("change", handleFileSelect, false);
 
 async function fun(){
   console.log("hello");
+  var previewImage = document.getElementById("preview");
+  
+  previewImage.src ="";
+  previewImage.style.visibility = "hidden";
   var element0 =await document.getElementById("loader");
-        element0.style.opacity = "1";
+        element0.style.visibility = "visible" ;
   var element1 =await document.getElementById("body-continer");
-        element1.style.opacity = "0.2";      
+        element1.style.visibility = "hidden" ;      
 
   //await document.getElementsByClassName("loader").css('background-color', 'grey');
   function ConvertToBase64(file) {
@@ -62,14 +66,17 @@ async function fun(){
       return await response.json();
     })
     .then(async function (object) {
-      element0.style.opacity = "1";
-      element1.style.opacity = "1";
+      
+      element0.style.visibility = "hidden" ;
+      element1.style.visibility = "visible" ;
+    let aa= await document.getElementById("forms").reset();
       // await alert("uploaded");
      await console.log(object);
     })
     .catch(async function (error) {
-      element0.style.opacity = "1";
-      element1.style.opacity = "1";
+      element0.style.opacity = "hidden";
+      element1.style.visibility = "visible" ;
+      let aa= await document.getElementById("forms").reset();
      await alert("Bad things! Ragnarők!");
     await  console.log(error.message);
     });
