@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
     <title>Document</title>
+    
 </head>
 
 <body>
     <!-- header -->
-
+    
     <div class="header">
-
+      
+      
     <!-- <div class="container"> -->
 
         <!-- <div class="web-name">IMAGE GENERATOR</div>
@@ -34,9 +36,18 @@
           
       </div>
     </div>
+  <div>    
+    <div class="loader" id="loader">
+      <div class="log-img" style="background-color: rgb(255, 255, 255); border-radius: 24px;">
+      <img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="300px" srcset="" class="">
+      <h2 class="" style="text-align: center; color: #000000;" >loading...</h2>
+      </div>
+    </div>
+  </div>
     <!-- body -->
-    <div class="body-continer">
+    <div class="body-continer" id="">
        
+      
     
 
         <form action="#" method="post" class="forms">
@@ -61,20 +72,23 @@
         <div>
         <img id="preview"  alt="Preview">
         </div>
-
+        <div class="input-field">
         <label for="Description">Description:</label>
         <textarea name="Description" rows="5" cols="45" placeholder="Enter Your Image Description here..." id="Description"></textarea>
-
+      </div>
+      <div class="input-field">
         <div class="button-container">
-        <a type="button"  class="button" onclick="fun()" >Upload</a>
+        <a type="button"  class="button" onclick="fun();" >Upload</a>
         </div>
+      </div>
       </div>
       </form>
       
     
-    </div>
-    
-    <script src="output.js"></script>
+      
+      <script src="output.js"></script>
+   
 </div>
+
 </body>
 </html>

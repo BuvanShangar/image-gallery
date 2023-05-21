@@ -15,7 +15,14 @@ function handleFileSelect(event) {
 const fileInput = document.getElementById("uploadInput");
 fileInput.addEventListener("change", handleFileSelect, false);
 
-async function fun() {
+async function fun(){
+  console.log("hello");
+  var element0 =await document.getElementById("loader");
+        element0.style.opacity = "1";
+  var element1 =await document.getElementById("body-continer");
+        element1.style.opacity = "0.2";      
+
+  //await document.getElementsByClassName("loader").css('background-color', 'grey');
   function ConvertToBase64(file) {
     return new Promise((resolve, reject) => {
       const filereader = new FileReader();
@@ -55,11 +62,15 @@ async function fun() {
       return await response.json();
     })
     .then(async function (object) {
-      await alert("uploaded");
+      element0.style.opacity = "1";
+      element1.style.opacity = "1";
+      // await alert("uploaded");
      await console.log(object);
     })
     .catch(async function (error) {
+      element0.style.opacity = "1";
+      element1.style.opacity = "1";
      await alert("Bad things! Ragnarők!");
     await  console.log(error.message);
     });
-}
+};
