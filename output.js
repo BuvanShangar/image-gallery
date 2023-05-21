@@ -35,22 +35,21 @@ async function fun() {
   const Des = document.getElementById("Description").value;
 
   let formData = {
-    name: `${Nam}`,
-    title: `${Tit}`,
-    image: `${ImgName}`,
-    description: `${Des}`
+    "name": `${Nam}`,
+    "title": `${Tit}`,
+    "image": `${ImgName}`,
+    "description":`${Des}`
   };
   // method: "POST" is missing from the object below
   let configObj = {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-     
     },
     body: JSON.stringify(formData),
   };
-
- await fetch("https://image-generator-api.netlify.app/post", configObj)
+//
+ await fetch("https://dhanush-image-generator-api.netlify.app/post", configObj)
 
     .then(async function (response) {
       return await response.json();
