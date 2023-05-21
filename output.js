@@ -55,6 +55,7 @@ async function fun() {
       return await response.json();
     })
     .then(async function (object) {
+      await alert("uploaded");
      await console.log(object);
     })
     .catch(async function (error) {
