@@ -1,19 +1,19 @@
 
-// const cont= document.querySelectorAll(".cont");
-// const observer = new IntersectionObserver(
-//     entries => {
-//         entries.forEach(entry => {
-//             entry.target.classList.toggle("show",entry.isIntersecting);
-//             if(entry.isIntersecting) observer.unobserve(entry.target)
-//         })
-//     },
-//     {
-//         threshold: 0,
-//     }
-// )
-// cont.forEach(cont => {
-//         observer.observe(cont)
-//     })
+const cont= document.querySelectorAll(".cont");
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle("show",entry.isIntersecting);
+            if(entry.isIntersecting) observer.unobserve(entry.target)
+        })
+    },
+    {
+        threshold: 0,
+    }
+)
+cont.forEach(cont => {
+        observer.observe(cont)
+    })
 
 
     let configObj = {
@@ -23,6 +23,14 @@
         }
       };
     async function loader(){
+      document.getElementById("body-container").innerHTML+=`<div class="loader" id="loader">
+                          <div class="log-img" style="background-color: rgba(217, 217, 217, 0.666); border-radius: 24px;">
+                          <img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="300px" srcset="" class=""><br>
+                          <img src="https://i.gifer.com/YCZH.gif" alt="" sizes="" width="300px" srcset="" class="">
+                          <!-- <h2 class="" style="text-align: center; color: #000000;" >loading...</h2> -->
+                          </div>
+                        </div>`;
+
         await fetch("https://image-gallery-api-git.netlify.app/", configObj)
     
         .then(async function (response) {
@@ -32,7 +40,7 @@
         {    console.log("hello");
             let json=JSON.parse( object.body);
 
-            var a=document.getElementById("body-container").innerHTML="hello";
+            var a=document.getElementById("body-container").innerHTML="";
             for(let i = 0; i < json.length; i++) {
                 let obj = json[i];
                 console.log(obj.image);
