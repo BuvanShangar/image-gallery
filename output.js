@@ -51,7 +51,6 @@ async function fun(){
     "image": `${ImgName}`,
     "description":`${Des}`
   };
-  // method: "POST" is missing from the object below
   let configObj = {
     method: "POST",
     headers: {
@@ -59,7 +58,7 @@ async function fun(){
     },
     body: JSON.stringify(formData),
   };
-//
+
  await fetch("https://dhanush-image-generator-api.netlify.app/post", configObj)
 
     .then(async function (response) {
