@@ -1,19 +1,19 @@
 
-const cont= document.querySelectorAll(".cont");
-const observer = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            entry.target.classList.toggle("show",entry.isIntersecting);
-            if(entry.isIntersecting) observer.unobserve(entry.target)
-        })
-    },
-    {
-        threshold: 0,
-    }
-)
-cont.forEach(cont => {
-        observer.observe(cont)
-    })
+// const cont= document.querySelectorAll(".cont");
+// const observer = new IntersectionObserver(
+//     entries => {
+//         entries.forEach(entry => {
+//             entry.target.classList.toggle("show",entry.isIntersecting);
+//             if(entry.isIntersecting) observer.unobserve(entry.target)
+//         })
+//     },
+//     {
+//         threshold: 0,
+//     }
+// )
+// cont.forEach(cont => {
+//         observer.observe(cont)
+//     })
 
 
     let configObj = {
@@ -23,20 +23,22 @@ cont.forEach(cont => {
         }
       };
     async function loader(){
-        await fetch("https://image-generator-api.netlify.app/", configObj)
+        await fetch("https://image-gallery-api-git.netlify.app/", configObj)
     
         .then(async function (response) {
           return await response.json();
         })
         .then(async function (object)
-        {
-            let json=object.body;
-            var a=document.getElementById("body-container").innerHTML;
+        {    console.log("hello");
+            let json=JSON.parse( object.body);
+
+            var a=document.getElementById("body-container").innerHTML="hello";
             for(let i = 0; i < json.length; i++) {
                 let obj = json[i];
-            
-              
-                 a+= `<div class="cont">
+                console.log(obj.image);
+                //console.log("hello");
+              //console.log(json);
+              document.getElementById("body-container").innerHTML+= `<div class="cont">
                 <img
                   src="${obj.image}"
                   alt=""
@@ -45,8 +47,7 @@ cont.forEach(cont => {
                   class="image"
                 />
                 <div class="cont-disc">
-
-44                <div class="cont-disc-name">${obj.title}</div>
+                <div class="cont-disc-name">${obj.title}</div>
                   <p>
                   ${obj.description}
                   </p>
@@ -64,8 +65,9 @@ cont.forEach(cont => {
                     <div href="" class="button1">➦</div>
                   </div>
                 </div>
-              </div>`
-            }
+              </div>`;
+              console.log("end");
+             }
 
     })};
      
