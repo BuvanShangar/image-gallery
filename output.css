@@ -278,8 +278,9 @@ border-style: solid;
     align-items: center;
 }
 input[type="file"]{
-color: #02b3c7;
-text-justify:newspaper;
+/* color: #02b3c7; */
+/* text-justify:newspaper; */
+\\\\\\
 }
 .input-field{ 
     position: relative;
