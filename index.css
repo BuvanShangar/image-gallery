@@ -15,7 +15,7 @@
 }
 
 .web-name{
-    /*text-shadow: 2px 2px 9px red; */
+
     text-transform: capitalize;
     font-size:x-large;
 }
@@ -66,10 +66,7 @@ body{
     flex-direction: column;
     align-content: center;
 }
-/* .search{
-  /* margin-top: 200px;   
-   
-} */
+
 .search-bar{
  all:unset;
  color: rgb(9, 5, 5);
@@ -130,7 +127,6 @@ body{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    /* Below is not needed */
     display:block;
     font-size: 200px;
     font-family: arial;

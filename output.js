@@ -26,7 +26,6 @@ async function fun(){
   var element1 =await document.getElementById("body-continer");
         element1.style.visibility = "hidden" ;      
 
-  //await document.getElementsByClassName("loader").css('background-color', 'grey');
   function ConvertToBase64(file) {
     return new Promise((resolve, reject) => {
       const filereader = new FileReader();
@@ -70,7 +69,6 @@ async function fun(){
       element0.style.visibility = "hidden" ;
       element1.style.visibility = "visible" ;
     let aa= await document.getElementById("forms").reset();
-      // await alert("uploaded");
      await console.log(object);
     })
     .catch(async function (error) {
