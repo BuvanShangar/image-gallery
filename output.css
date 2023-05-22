@@ -277,11 +277,10 @@ border-style: solid;
     padding: 16px 24px 16px 24px;
     align-items: center;
 }
-input[type="file"]{
+/* input[type="file"]{
 /* color: #02b3c7; */
 /* text-justify:newspaper; */
-\\\\\\
-}
+
 .input-field{ 
     position: relative;
     margin-top: 10px;

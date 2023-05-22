@@ -68,5 +68,5 @@ cont.forEach(cont => {
               </div>`
             }
 
-    }};
+    })};
      
