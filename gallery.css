@@ -182,6 +182,7 @@ flex-direction: column;
     justify-content: center;    
 }
 .button1{
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     font-size: 22px;

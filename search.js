@@ -62,7 +62,7 @@ cont.forEach(cont => {
         
                   <div class="btn-container">
                     <div href="" class="button1">♡</div>
-                    <a href="${obj.image}" download="${obj.title}.jpg" class="button12">
+                    <a href="${obj.image}" download="${obj.title}.jpg" class="button1">
                       <img
                         src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
                         width="25px"
