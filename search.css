@@ -89,7 +89,7 @@ flex-direction: column;
 }
 .container{
     display: flex;
-    background-color:rgb(77, 74, 74);
+    background-color:rgba(77, 74, 74, 0.346);
     flex-direction: row;
     align-content: right;
     margin: 0% 0% 0% 0%;
