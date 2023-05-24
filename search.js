@@ -15,13 +15,19 @@ cont.forEach(cont => {
     })
 
 
-    let configObj = {
-        method: "GET",
+    
+    async function search(){
+      let button = document.getElementById("button").value;
+      let formData = {
+        title: `${button}`
+      };
+      let configObj = {
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
-        }
+        },
+        body: JSON.stringify(formData) 
       };
-    async function search(){
       document.getElementById("body-container").innerHTML=`<div class="loader" id="loader">
                           <div class="log-img" style="background-color: rgba(217, 217, 217, 0.666); border-radius: 24px;">
                           <img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="300px" srcset="" class=""><br>
@@ -30,15 +36,15 @@ cont.forEach(cont => {
                           </div>
                         </div>`;
 
-        await fetch("https://image-gallery-api-git.netlify.app/", configObj)
-    
+        await fetch("https://yamuna-image-gallery.netlify.app/get/", configObj)
+    8
         .then(async function (response) {
           return await response.json();
         })
         .then(async function (object)
         {    console.log("hello");
             let json=JSON.parse( object.body);
-
+console.log(json);
             var a=document.getElementById("body-container").innerHTML="";
             for(let i = 0; i < json.length; i++) {
                 let obj = json[i];
