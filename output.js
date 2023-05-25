@@ -53,13 +53,15 @@ async function fun(){
   };
   let configObj = {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
     body: JSON.stringify(formData),
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*'
+    }
   };
 
- await fetch("https://dhanush-image-generator-api.netlify.app/post", configObj)
+ await fetch("https://image-gallery-api-git.netlify.app/post",configObj)
 
     .then(async function (response) {
       return await response.json();
@@ -73,7 +75,7 @@ async function fun(){
      await console.log(object);
     })
     .catch(async function (error) {
-      element0.style.opacity = "hidden";
+      element0.style.visibility = "hidden";
       element1.style.visibility = "visible" ;
       let aa= await document.getElementById("forms").reset();
      await alert("Bad things! Ragnarők!");
