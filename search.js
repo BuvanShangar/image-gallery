@@ -13,10 +13,7 @@ const observer = new IntersectionObserver(
 cont.forEach(cont => {
         observer.observe(cont)
     })
-
-
-    
-    async function search(){
+async function search(){
       let button = document.getElementById("button").value;
       let formData = {
         title: `${button}`
@@ -38,7 +35,7 @@ cont.forEach(cont => {
 
         await fetch("https://image-gallery-api-git.netlify.app/get/", configObj)
         .then(async function (response) {
-          //console.log(response);
+          console.log(response);
           return await response.json();
         })
         .then(async function (object)

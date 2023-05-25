@@ -49,8 +49,7 @@ async function fun(){
     "name": `${Nam}`,
     "title": `${Tit}`,
     "image": `${ImgName}`,
-    "description":`${Des}`,
-    "time" :`${new Date()}`
+    "description":`${Des}`
   };
   let configObj = {
     method: "POST",
