@@ -60,7 +60,7 @@ async function fun(){
     body: JSON.stringify(formData),
   };
 
- await fetch("https://dhanush-image-generator-api.netlify.app/post", configObj)
+ await fetch("https://image-gallery-api-git.netlify.app/post", configObj)
 
     .then(async function (response) {
       return await response.json();
