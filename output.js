@@ -49,18 +49,23 @@ async function fun(){
     "name": `${Nam}`,
     "title": `${Tit}`,
     "image": `${ImgName}`,
-    "description":`${Des}`,
-    "time" :`${new Date()}`
+    "description":`${Des}`
   };
   let configObj = {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
     },
-    body: JSON.stringify(formData),
+    body: JSON.stringify(formData)
   };
 
+<<<<<<< HEAD
  await fetch("https://image-gallery-api-git.netlify.app/post", configObj)
+=======
+ await fetch("https://image-gallery-api-git.netlify.app/post",configObj)
+>>>>>>> e0a30f2f90660793681ba2eac90b09565a95a208
 
     .then(async function (response) {
       return await response.json();
@@ -74,7 +79,7 @@ async function fun(){
      await console.log(object);
     })
     .catch(async function (error) {
-      element0.style.opacity = "hidden";
+      element0.style.visibility = "hidden";
       element1.style.visibility = "visible" ;
       let aa= await document.getElementById("forms").reset();
      await alert("Bad things! Ragnarők!");
