@@ -53,12 +53,12 @@ async function fun(){
   };
   let configObj = {
     method: "POST",
-    body: JSON.stringify(formData),
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
-    }
+    },
+    body: JSON.stringify(formData)
   };
 
  await fetch("https://image-gallery-api-git.netlify.app/post",configObj)
