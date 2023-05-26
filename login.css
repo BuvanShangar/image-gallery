@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+*{
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+body{
+margin: 0 0 0 0;
+background-image: url(https://wallpapercave.com/wp/wp4155376.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.header{
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    width: 100%;
+    height: 12vh;
+    margin:0%  0% 0% 0% ;
+    background-color: rgb(77, 74, 74);
+}
+.logo{
+    justify-content: left;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-btn{
+    padding: 10px 10px 10px 10px;
+    font-size: medium;
+    text-decoration: none;
+    background-color: black;
+    color: aliceblue;
+    margin-right: 5px;
+    padding: 1.3vh 1.3vh 1.3vh 1.3vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.nav-btn:hover{
+    background-color: #ffffffc9;
+    color: #000000;
+}
+.nav-btn:active {
+    background-color:#bccad6 ;
+    box-shadow: 0px 2px 0px #030303;
+    position: relative;
+    top: 2px;
+}
+.web-name{
+    font-size:x-large;
+    font-weight: 900;
+    color: #000000;
+    justify-content: center;
+} 
+.body-continer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10vh;
+    align-items: center;
+    height: 50%;
+    margin: 0 0 0 0;
+    justify-items: center;
+}
+.login{
+   
+    width:600px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px;
+    box-shadow: 0px 6px 6px #0b0d0d;
+    background:#d3d3d383;
+    border-style: solid;
+    gap: 25px;
+    padding-top: 50px;
+    border-radius: 24px;
+}
+.button {
+    color: #ecf0f1;
+    font-size: 25px;
+    background-color:black;
+    border: 1px black;
+    border-radius: 5px;
+    padding: 10px 24px 10px 24px;
+    box-shadow: 0px 6px 0px black;
+    transition: all .1s;
+    margin-right:30px;
+    text-decoration:none;   
+    justify-content: space-between;    
+
+}
+.button:active {
+    background-color: black;
+    box-shadow: 0px 2px 0px black;
+    position: relative;
+    top: 2px;
+}
+.button-container{
+    display: flex;  
+    width:80%;
+    justify-content: center;
+    padding: 16px 24px 16px 24px;
+    align-items: center;
+}
+.input-field{ 
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+::-webkit-file-upload-button {
+    display: none;
+ }
+.input-field input{
+     width: 350px;
+     height: 60px;
+     border-radius: 6px; 
+     font-size: 18px; 
+     padding: 0 15px; 
+     border: 2px solid black;
+     background: transparent;
+     color: black;
+     outline: none;
+     align-items: center;
+ }
