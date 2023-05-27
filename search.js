@@ -33,7 +33,7 @@ async function search(){
                           </div>
                         </div>`;
 
-        await fetch("https://image-gallery-api-git.netlify.app/get", configObj)
+        await fetch("https://image-generator-api-render.onrender.com/get", configObj)
         .then(async function (response) {
           console.log(response);
           return await response.json();
