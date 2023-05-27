@@ -65,17 +65,10 @@ async function fun(){
       return await response.json();
     })
     .then(async function (object) {
-      
-      element0.style.visibility = "hidden" ;
-      element1.style.visibility = "visible" ;
-    let aa= await document.getElementById("forms").reset();
-      // await alert("uploaded");
+    // let aa= await document.getElementById("forms").reset();
      await console.log(object);
     })
     .catch(async function (error) {
-      element0.style.opacity = "hidden";
-      element1.style.visibility = "visible" ;
-      let aa= await document.getElementById("forms").reset();
      await alert("Bad things! Ragnarők!");
     await  console.log(error.message);
     });
