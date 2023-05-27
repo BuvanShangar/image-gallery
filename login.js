@@ -19,8 +19,8 @@ async function login(){
   var email = document.forms["loginForm"]["username"].value;
   var password = document.forms["loginForm"]["password"].value;
   let formData = {
-    "email": `${email}`,
-    "password": `${password}`
+    email: `${email}`,
+    password: `${password}`
   };
   let configObj = {
     method: "POST",
