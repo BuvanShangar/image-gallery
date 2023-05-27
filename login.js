@@ -30,7 +30,7 @@ async function login(){
     body: JSON.stringify(formData)
   };
 
- await fetch("https://image-gallery-api-git.netlify.app/login", configObj)
+ await fetch("https://image-generator-api-render.onrender.com/login", configObj)
 
     .then(async function (response) {
       return await response.json();

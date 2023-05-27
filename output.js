@@ -60,16 +60,20 @@ async function fun(){
     body: JSON.stringify(formData)
   };
 
- await fetch("https://image-gallery-api-git.netlify.app/post", configObj)
+ await fetch("https://image-generator-api-render.onrender.com/post", configObj)
 
     .then(async function (response) {
       return await response.json();
     })
     .then(async function (object) {
-    // let aa= await document.getElementById("forms").reset();
+      element0.style.opacity = "hidden";
+      element1.style.visibility = "visible" ;
+     let aa= await document.getElementById("forms").reset();
      await console.log(object);
     })
     .catch(async function (error) {
+      element0.style.opacity = "hidden";
+      element1.style.visibility = "visible" ;
      await alert("Bad things! Ragnarők!");
     await  console.log(error.message);
     });

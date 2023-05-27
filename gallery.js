@@ -31,7 +31,7 @@ cont.forEach(cont => {
                           </div>
                         </div>`;
 
-        await fetch("https://image-gallery-api-git.netlify.app/", configObj)
+        await fetch("https://image-generator-api-render.onrender.com/", configObj)
     
         .then(async function (response) {
           return await response.json();
