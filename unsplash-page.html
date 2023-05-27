@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+[2:03 pm, 27/05/2023] +91 90479 97294: <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,20 +20,56 @@
         </div>
     </div>
     <!-- body -->
-    <div class="cont-header">AI IMAGE GENERATOR</div>
-    <div class="body-container">
-        <div class="hero">
-            <div class="search">
-                <!-- <form action="" method="post"> -->
-                    <div><input type="search" name="" id="" class="search-bar" placeholder="Enter your prompt.."></div>
-                    <button type="submit" class="btn" onclick="generate()">GENERATE</button>
-                
-                <!-- </form> -->
-            </div>
-       <div id="body-container">
-    </div>
-    </div>
-    </div>
-    <script src="unsplash-page.js"></script>
-    </body>
-    </html>
+    <div class="cont-header">AI IMAGE GENERAT…
+[2:04 pm, 27/05/2023] +91 90479 97294: const cont= document.querySelectorAll(".cont");
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle("show",entry.isIntersecting);
+            if(entry.isIntersecting) observer.unobserve(entry.target)
+        })
+    },
+    {
+        threshold: 0,
+    }
+)
+cont.forEach(cont => {
+        observer.observe(cont)
+    })
+    let configObj = {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        }
+      };
+    async function generate(){
+      var username = document.getElementById("search").value;      
+console.log(username);
+document.getElementById("body-container").innerHTML= `<div class="cont">
+<img
+  src="https://source.unsplash.com/random/?${username}"
+  alt=""
+  height="300px"
+  srcset=""
+  class="image"
+/>
+<div class="cont-disc">
+<div class="cont-disc-name">${username}</div>
+  <p>
+  ${username}
+  </p>
+  <h4>by ${username}</h4>
+
+  <div class="btn-container">
+    <a href="https://source.unsplash.com/random/?${username}" download="${username}.jpg" class="button1">
+      <img
+        src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
+        width="25px"
+        height="25px"
+      />
+    </a>
+    <div href="" class="button1">➦</div>
+  </div>
+</div>
+</div>`
+};
