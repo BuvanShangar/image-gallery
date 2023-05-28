@@ -1,8 +1,10 @@
 
 function validateForm() {
-    var email = document.forms["loginForm"]["username"].value;
-    var password = document.forms["loginForm"]["password"].value;
-
+  console.log("hello");
+    //var email = document.forms["loginForm"]["username"].value;
+    //var password = document.forms["loginForm"]["password"].value;
+    var email = document.getElementById("Uname").value;
+    var password = document.getElementById("pwd").value;
     if (email == "") {
       alert("Please enter your username.");
       return false;
@@ -16,12 +18,21 @@ function validateForm() {
 async function login(){
   console.log("hello");
  
-  var email = document.forms["loginForm"]["username"].value;
-  var password = document.forms["loginForm"]["password"].value;
+  //var email = document.forms["loginForm"]["username"].value;
+  //var password = document.forms["loginForm"]["password"].value;
+    var email = document.getElementById("Uname").value;
+    var password = document.getElementById("pwd").value;
   let formData = {
-    email: `${email}`,
-    password: `${password}`
+    "email": `${email}`,
+    "password": `${password}`
   };
+  // document.getElementById("body-container").innerHTML=`<div class="loader" id="loader">
+  //                     <div class="log-img" style="background-color: rgba(217, 217, 217, 0.666); border-radius: 24px;">
+  //                     <img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="300px" srcset="" class=""><br>
+  //                     <img src="https://i.gifer.com/YCZH.gif" alt="" sizes="" width="300px" srcset="" class="">
+  //                     <!-- <h2 class="" style="text-align: center; color: #000000;" >loading...</h2> -->
+  //                     </div>
+  //                   </div>`;
   let configObj = {
     method: "POST",
     headers: {
@@ -30,27 +41,17 @@ async function login(){
     body: JSON.stringify(formData)
   };
 
- await fetch("https://image-generator-api-render.onrender.com/login", configObj)
+ await fetch("http://localhost:3000/login", configObj)
 
-    .then(async function (response) {
-      return await response.json();
-    })
-    .then(async function (object) {
-      
-      element0.style.visibility = "hidden" ;
-      element1.style.visibility = "visible" ;
-    let aa= await document.getElementById("forms").reset();
-      // await alert("uploaded");
-     await console.log(object);
-    })
-    .catch(async function (error) {
-      element0.style.opacity = "hidden";
-      element1.style.visibility = "visible" ;
-      let aa= await document.getElementById("forms").reset();
-     await alert("Bad things! Ragnarők!");
-    await  console.log(error.message);
-    });
-
+ .then(async function (response) {
+  console.log(response);
+  return await response.json();
+})
+.then(async function (object)
+{    console.log(object);
+    let json=object;
+    console.log(json);
+})
 
 
 
