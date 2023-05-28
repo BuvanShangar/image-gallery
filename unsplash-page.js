@@ -31,12 +31,7 @@ document.getElementById("body-container").innerHTML= `<div class="cont">
   class="image"
 />
 <div class="cont-disc">
-<div class="cont-disc-name">${username}</div>
-  <p>
-  ${username}
-  </p>
-  <h4>by ${username}</h4>
-
+  
   <div class="btn-container">
     <a href="https://source.unsplash.com/random/?${username}" download="${username}.jpg" class="button1">
       <img
