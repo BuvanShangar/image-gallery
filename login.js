@@ -44,13 +44,14 @@ async function login(){
  await fetch("http://localhost:3000/login", configObj)
 
  .then(async function (response) {
-  console.log(response);
+   console.log(formData);
+ 
   return await response.json();
 })
 .then(async function (object)
 {    console.log(object);
-    let json=object;
-    console.log(json);
+    //let json=object;
+    //console.log(json);
 })
 
 
