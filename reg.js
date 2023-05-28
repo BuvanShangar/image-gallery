@@ -42,7 +42,7 @@ async function register(){
                       </div>
                     </div>`;
 
-    await fetch("https://image-generator-api-render.onrender.com/get", configObj)
+    await fetch("https://image-generator-api-render.onrender.com/register", configObj)
     .then(async function (response) {
       console.log(response);
       return await response.json();
