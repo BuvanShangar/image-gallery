@@ -22,12 +22,17 @@
       </div>
     </div>
     <!-- body -->
+<<<<<<< HEAD
         <div class="body-container" id="body-container">
         <form name="loginForm" onsubmit="validateForm()" method="post">
+=======
+        <div class="body-continer" id="body-continer">
+        <form name="loginForm">
+>>>>>>> 0399424216b80d3820712154302a1a6ea6f82fd1
         <div class="login">
         <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div>
         <div class="input-field">
-        <label for="name">User Name:</label>
+        <label for="name">Email:</label>
         <input type="text" required="required" name="name" placeholder="Enter your user name here..." id="Uname">
         </div>
 
@@ -37,11 +42,12 @@
         </div>
         
         <div class="button-container">
-            <input type="submit" name="Login" class="button" value="login">
+            <input type="button" onclick="validateForm()" name="Login" class="button" value="login">
             <!-- <input type="button" name="Register" class="button" value="Register"> -->
             <a href="reg.html" type="button" class="button">Register</a>
         </div>
     </div>
     </form>
+    <script src="login.js"></script>
 </body>
 </html>
