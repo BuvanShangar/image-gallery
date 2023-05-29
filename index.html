@@ -19,16 +19,37 @@
     </div>
 
     <div class="hero">
-        <div class="heading"><div >SEARCH HERE.</div>
+        <div class="heading ml2"><div >The world holds many wonders</div>
            
         </div>
         <div class="cont">World's scenic view at your fingertips</div>
         <div class="search">
             <a class="btn" href="./search.html" style="text-decoration: none;"> Search</a>
             <a class="btn" href="./login.html" style="text-decoration: none;"> Upload</a>
+            <a class="btn" href="./unsplash-page.html" style="text-decoration: none;"> Generate</a>
           
 
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
+<script>var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });</script>
 </html>
