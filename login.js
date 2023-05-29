@@ -41,7 +41,7 @@ async function login(){
     body: JSON.stringify(formData)
   };
 
- await fetch("http://localhost:3000/login", configObj)
+ await fetch("https://image-gallery-api-fvmj.onrender.com/login", configObj)
 
  .then(async function (response) {
    console.log(formData);
