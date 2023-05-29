@@ -56,7 +56,20 @@ async function login(){
   //  console.log(window.location);
   }
   else{
-    alert("Invalid Credentials");
+    //alert("Invalid Credentials");
+    document.getElementById("body-container").innerHTML=`
+    <form >
+    <div class="login">
+    <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div>
+    
+    <h2>Invalid Login</h2>
+    <h2>Go back to register</h2>
+
+  
+    
+    <div class="button-container">
+      <a href="reg.html" type="button" class="button">Register</a>
+    </div>`;
   }
  // console.log(window.location);
 })

@@ -52,7 +52,6 @@ background-size: cover;
     padding-left: 10px;
 }
 .body-container{
-  54
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
