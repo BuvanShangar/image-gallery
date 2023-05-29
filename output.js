@@ -60,7 +60,7 @@ async function fun(){
     body: JSON.stringify(formData)
   };
 
- await fetch("https://image-generator-api-render.onrender.com/post", configObj)
+ await fetch("https://image-gallery-api-fvmj.onrender.com/post", configObj)
 
     .then(async function (response) {
       return await response.json();
