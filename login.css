@@ -3,8 +3,6 @@
     font-family: 'Playfair Display', serif;
 }
 
-
-
 body{
 margin: 0 0 0 0;
 background-image: url(https://wallpapercave.com/wp/wp4155376.jpg);
@@ -53,7 +51,8 @@ background-size: cover;
     justify-content: center;
     padding-left: 10px;
 }
-.body-continer{
+.body-container{
+  54
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

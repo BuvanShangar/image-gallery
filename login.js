@@ -26,13 +26,13 @@ async function login(){
     "email": `${email}`,
     "password": `${password}`
   };
-  // document.getElementById("body-container").innerHTML=`<div class="loader" id="loader">
-  //                     <div class="log-img" style="background-color: rgba(217, 217, 217, 0.666); border-radius: 24px;">
-  //                     <img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="300px" srcset="" class=""><br>
-  //                     <img src="https://i.gifer.com/YCZH.gif" alt="" sizes="" width="300px" srcset="" class="">
-  //                     <!-- <h2 class="" style="text-align: center; color: #000000;" >loading...</h2> -->
-  //                     </div>
-  //                   </div>`;
+  document.getElementById("body-container").innerHTML=`<div class="loader" id="loader">
+                      <div class="log-img" style="background-color: rgba(217, 217, 217, 0.666); border-radius: 24px;">
+                      <img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="300px" srcset="" class=""><br>
+                      <img src="https://i.gifer.com/YCZH.gif" alt="" sizes="" width="300px" srcset="" class="">
+                      <!-- <h2 class="" style="text-align: center; color: #000000;" >loading...</h2> -->
+                      </div>
+                    </div>`;
   let configObj = {
     method: "POST",
     headers: {
@@ -41,7 +41,7 @@ async function login(){
     body: JSON.stringify(formData)
   };
 
- await fetch("http://localhost:3000/login", configObj)
+ await fetch("https://image-gallery-api-fvmj.onrender.com/login", configObj)
 
  .then(async function (response) {
    console.log(formData);
@@ -49,9 +49,16 @@ async function login(){
   return await response.json();
 })
 .then(async function (object)
-{    console.log(object);
-    //let json=object;
-    //console.log(json);
+ {   console.log(object.body);
+  // if(comparevalue=Object.body.localeCompare(valid Credentials)){
+    if(object.body==="valid Credentials"){
+    window.location="./output.html";
+  //  console.log(window.location);
+  }
+  else{
+    alert("Invalid Credentials");
+  }
+ // console.log(window.location);
 })
 
 
