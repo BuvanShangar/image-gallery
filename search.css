@@ -61,6 +61,7 @@ flex-direction: column;
     /*text-shadow: 2px 2px 9px red; */
     text-transform: capitalize;
     font-size:x-large;
+    padding-left: 10px;
 }
 .nav{
     display: flex;
@@ -68,26 +69,21 @@ flex-direction: column;
 }
 .nav-btn{
     padding: 10px 10px 10px 10px;
-    font-size: medium;
+    font-size:x-large;
     text-decoration: none;
-    background-color: black;
-    color: aliceblue;
+    color: rgb(9, 10, 10);
     margin-right: 5px;
-    /* padding: 1vh 1vh 1vh 1vh; */
     padding: 1.3vh 1.3vh 1.3vh 1.3vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
 }
 .nav-btn:hover{
-    background-color: #ffffffc9;
-    color: #000000;
+    color: white;
 }
-.nav-btn:active {
+/* .nav-btn:active {
     background-color:#bccad6 ;
     box-shadow: 0px 2px 0px #030303;
     position: relative;
     top: 2px;
-}
+} */
 .container{
     display: flex;
     background-color:rgba(77, 74, 74, 0.346);

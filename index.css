@@ -12,7 +12,7 @@ font-family: 'Roboto Mono', monospace; */
     display: flex;
     align-items: center;
     justify-content: space-between;    
-    background-color:rgba(77, 74, 74, 0.346);
+    background-color:rgba(246, 241, 241, 0.881);
     width: 100%;
     height: 12vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -30,34 +30,30 @@ font-family: 'Roboto Mono', monospace; */
 }  
 .nav-btn{
     padding: 10px 10px 10px 10px;
-    font-size: medium;
+    font-size:x-large;
     text-decoration: none;
-    background-color: black;
-    color: aliceblue;
+    color: rgb(9, 10, 10);
     margin-right: 5px;
     padding: 1.3vh 1.3vh 1.3vh 1.3vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
 }
 .nav-btn:hover{
-    background-color: #ffffffc9;
-    color: #000000;
+    color:darkgray;
 }
-.nav-btn:active {
+/* .nav-btn:active {
     background-color:#bccad6 ;
     box-shadow: 0px 2px 0px #030303;
     position: relative;
     top: 2px;
-}
+} */
 .logo{
     margin-left:20px;
 }
 body{
-    background-image: url("https://4kwallpapers.com/images/wallpapers/forest-foggy-mist-pine-trees-early-morning-5k-6016x3384-310.jpg");
+    background-image: url("https://source.unsplash.com/random/?wallpaper,Nature");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;s
 }
 
 .hero{
@@ -86,12 +82,17 @@ body{
  
 }
 .btn{
-  background-color: rgba(8, 8, 8, 0.746);
-  padding: 14px 35px 20px 35px;
-  border-radius: 50px;
-  font-size:xx-large;
+  background-color:rgba(6, 6, 6, 0.615);
+  padding: 14px 35px 14px 35px;
+  border-radius: 70px;
+  font-size:x-large;
   font-weight: 700;
-  color: rgb(246, 240, 240);
+  color: yellow;
+  margin-right: 20px;
+}
+.btn:hover{
+    background-color: rgba(245, 244, 244, 0.746);
+    color: rgb(4, 4, 4);
 }
 
 .discription{
@@ -133,19 +134,26 @@ body{
     to {left: 300px;}
 }
 .heading{
-    background: url(https://thumbs.gfycat.com/RegularAmbitiousChinchilla-size_restricted.gif)   -20px -20px no-repeat;
+    /* background: url(https://thumbs.gfycat.com/RegularAmbitiousChinchilla-size_restricted.gif)   -20px -20px no-repeat;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     /* Below is not needed */
-    display:block;
-    font-size: 200px;
+    /* display:block;
+    font-size: 200px; */
     /* font-family:Arial; */
-    text-align: center;
+    /* text-align: center;
     margin-top: -20px;
     font-weight: bold;
     letter-spacing: -25px;
-    background-size: cover;
+    background-size: cover; */
+    color:rgba(255, 255, 0, 0.884);
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -20px;
+    margin-bottom: 50px;
 }
 .cont{
     color: aliceblue;
@@ -154,5 +162,5 @@ body{
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     margin-top: -20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
