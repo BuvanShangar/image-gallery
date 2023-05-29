@@ -52,7 +52,7 @@ async function login(){
  {   console.log(object.body);
   // if(comparevalue=Object.body.localeCompare(valid Credentials)){
     if(object.body==="valid Credentials"){
-    window.location="./output.html";
+    window.location="./uvpage.html";
   //  console.log(window.location);
   }
   else{
