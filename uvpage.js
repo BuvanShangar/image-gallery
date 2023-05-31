@@ -2,7 +2,12 @@
 //     localStorage.removeItem(key);
 //     return '';
 //   };
-
+let configObj = {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+  }
+};
   async function userload(){
     document.getElementById("user").innerHTML=`hey ${sessionStorage.getItem("user")}`;
     //let button = document.getElementById("button").value;
@@ -24,7 +29,7 @@
                         </div>
                       </div>`;
 
-      await fetch("https://image-generator-api-render.onrender.com/get", configObj)
+      await fetch("http://localhost:3000/get", configObj)
       .then(async function (response) {
         console.log(response);
         return await response.json();
@@ -55,7 +60,7 @@
               <h4>by ${obj.name}</h4>
     
               <div class="btn-container">
-                <div href="" class="button1">♡</div>
+                <button onclick="deletee('${obj._id}')" class="button1">♡<button>
                 <a href="${obj.image}" download="${obj.title}.jpg" class="button1">
                   <img
                     src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
@@ -71,3 +76,13 @@
            }
 
   })};  
+  async function deletee(...id){
+console.log(id);
+    await fetch(`http://localhost:3000/delete/${id}`, configObj)
+    .then(async function (response) {
+      console.log(response);
+      return await response.json();
+    })
+    .then(async function (object)
+    {    console.log(object);})
+  };
