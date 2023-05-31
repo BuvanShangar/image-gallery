@@ -48,10 +48,27 @@ async function register(){
       return await response.json();
     })
     .then(async function (object)
-    {    console.log(object);
-        let json=object;
-        console.log(json);
-    })
-
-
-};
+    {     console.log(object.body);
+      // if(comparevalue=Object.body.localeCompare(valid Credentials)){
+        if(object.body==="valid Credentials"){
+        window.location="./uvpage.html";
+      //  console.log(window.location);
+      }
+      else{
+        //alert("Invalid Credentials");
+        document.getElementById("body-container").innerHTML=`
+        <form >
+        <div class="login">
+        <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div>
+        
+        <h2>Invalid Login</h2>
+        <h2>Go back to register</h2>
+    
+      
+        
+        <div class="button-container">
+          <a href="reg.html" type="button" class="button">Register</a>
+        </div>`;
+      }
+     // console.log(window.location);
+    })};

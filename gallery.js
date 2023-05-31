@@ -70,7 +70,7 @@ cont.forEach(cont => {
                       height="25px"
                     />
                   </a>
-                  <div href="" class="button1">➦</div>
+                  <div onclick="window.plugins.socialsharing.shareViaInstagram('Message via Instagram', ${obj.image})" class="button1">➦</div>
                 </div>
               </div>
             </div>`;

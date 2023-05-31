@@ -41,7 +41,7 @@ async function login(){
     body: JSON.stringify(formData)
   };
 
- await fetch("https://image-gallery-api-fvmj.onrender.com/login", configObj)
+ await fetch("https://image-generator-api-render.onrender.com/login", configObj)
 
  .then(async function (response) {
    console.log(formData);
@@ -51,30 +51,36 @@ async function login(){
 .then(async function (object)
  {   console.log(object.body);
   // if(comparevalue=Object.body.localeCompare(valid Credentials)){
-    if(object.body==="valid Credentials"){
-    window.location="./uvpage.html";
+    if(object.body==="Invalid Credentials"){
+   // window.location="./uvpage.html";
   //  console.log(window.location);
-  }
-  else{
-    //alert("Invalid Credentials");
-    document.getElementById("body-container").innerHTML=`
-    <form >
-    <div class="login">
-    <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div>
-    
-    <h2>Invalid Login</h2>
-    <h2>Go back to register</h2>
+  document.getElementById("body-container").innerHTML=`
+  <form >
+  <div class="login">
+  <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div>
+  
+  <h2>Invalid register</h2>
+  <h2>Go back to register</h2>
+
 
   
-    
-    <div class="button-container">
-      <a href="reg.html" type="button" class="button">Register</a>
-    </div>`;
+  <div class="button-container">
+    <a href="reg.html" type="button" class="button">Register</a>
+  </div>`;
   }
- // console.log(window.location);
+  else{
+    console.log(object.body);
+    let data = JSON.parse(object.body);
+    console.log(data[0]);
+    alert("Invalid Credentials");
+    sessionStorage.setItem("user",data[0].username);
+   console.log(sessionStorage.getItem("user"));
+  window.location="./uvpage.html";
+  }
+ //console.log(window.location);
 })
 
 
 
 
- }
+ };
