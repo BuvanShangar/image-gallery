@@ -78,11 +78,13 @@ let configObj = {
   })};  
   async function deletee(...id){
 console.log(id);
-    await fetch(`http://localhost:3000/delete/${id}`, configObj)
+    await fetch(`https://image-generator-api-render.onrender.com/delete/${id}`, configObj)
     .then(async function (response) {
       console.log(response);
       return await response.json();
     })
     .then(async function (object)
-    {    console.log(object);})
+    {    console.log(object);
+      userload();
+    })
   };
