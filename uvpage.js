@@ -29,8 +29,7 @@ let configObj = {
                         </div>
                       </div>`;
 
-      await fetch("const database = (await clientPromise).db("mini_project");
-        const collection =await database.collection("image_generator");get", configObj)
+      await fetch("https://image-generator-api-render.onrender.com/get", configObj)
       .then(async function (response) {
         console.log(response);
         return await response.json();
@@ -77,10 +76,9 @@ let configObj = {
            }
 
   })};  
-  async function deletee(id){
+  async function deletee(...id){
 console.log(id);
-    await fetch(`const database = (await clientPromise).db("mini_project");
-        const collection =await database.collection("image_generator");delete/${id}`, configObj)
+    await fetch(`http://localhost:3000/delete/${id}`, configObj)
     .then(async function (response) {
       console.log(response);
       return await response.json();
