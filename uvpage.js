@@ -76,7 +76,7 @@ let configObj = {
            }
 
   })};  
-  async function deletee(...id){
+  async function deletee(id){
 console.log(id);
     await fetch(`http://localhost:3000/delete/${id}`, configObj)
     .then(async function (response) {
