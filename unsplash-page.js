@@ -72,7 +72,7 @@ document.getElementById("body-container").innerHTML=`<div class="loader" id="loa
       
                 <div class="btn-container">
                   <div href="" class="button1">♡</div>
-                  <a href="${obj.description}" download="${obj.search}.jpg" class="button1">
+                  <a  download="${obj.urls.regular}" class="button1">
                     <img
                       src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
                       width="25px"
