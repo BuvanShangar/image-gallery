@@ -71,7 +71,14 @@ document.getElementById("body-container").innerHTML=`<div class="loader" id="loa
                 <h4>by ${obj.user.first_name}</h4>
       
                 <div class="btn-container">
-                  <div href="" class="button1">♡</div>
+                  <div href="" class="button1"></div>
+                  <a  href="${obj.links.download_location}" download="${obj.links.download}.jpg" class="button1">
+                    <img
+                      src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
+                      width="25px"
+                      height="25px"
+                    />
+                  </a>
                   <a  href="${obj.links.download_location}" download="${obj.links.download}.jpg" class="button1">
                     <img
                       src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
