@@ -55,9 +55,14 @@ body{
 }
 .container{
    position: relative;
-   font-size:xxx-large;
+   /* font-size:xxx-large; */
 }
-
+#user{
+    font-size:xxx-large;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .cont{
     display:flex;
     flex-direction: row;
@@ -140,6 +145,33 @@ body{
     font-weight: 900;
     text-align: center;
     color: #040505;
+}
+#loader{
+    position:absolute;
+    top: 50%;
+width: 100%;
+/* marhin: 0px 10px 0px 10px; */
+/* height: 129vh; */
+background-color: rgba(255, 255, 255, 0); 
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+flex-wrap: nowrap;
+
+/* visibility: hidden; */
+
+}
+.lod-img{
+    background-color: #ffffffb4;
+    display: flex;
+/* align-items: center; */
+justify-content: center;
+flex-direction: column;
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    /* z-index: 3; */
 }
 @media (max-width:1154px) {
     .cont{
