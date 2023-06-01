@@ -40,7 +40,7 @@ async function fun(){
       };
     });
   }
-  const Nam = document.getElementById("name").value;
+  const Nam = sessionStorage.getItem("user");
   const Tit = document.getElementById("title").value;
   const Img = document.getElementById("uploadInput");
   const ImgName = await ConvertToBase64(Img.files[0]);

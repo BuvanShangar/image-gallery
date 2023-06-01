@@ -9,8 +9,7 @@ let configObj = {
   }
 };
   async function userload(){
-    document.getElementById("user").innerHTML=`hey ${sessionStorage.getItem("user")}`;
-    //let button = document.getElementById("button").value;
+    document.getElementById("user").innerHTML=`hey ${sessionStorage.getItem("user")} 👋...`;
     let formData = {
       "search":`${sessionStorage.getItem("user")}`
     };
@@ -60,14 +59,14 @@ let configObj = {
               <h4>by ${obj.name}</h4>
     
               <div class="btn-container">
-                <button onclick="deletee('${obj._id}')" class="button1">♡<button>
-                <a href="${obj.image}" download="${obj.title}.jpg" class="button1">
+                <button onclick="deletee('${obj._id}')" class="button1">♡</button>
+                <div href="${obj.image}" download="${obj.title}.jpg" class="button1">
                   <img
                     src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
                     width="25px"
                     height="25px"
                   />
-                </a>
+                </div>
                 <div href="" class="button1">➦</div>
               </div>
             </div>
