@@ -21,7 +21,7 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-.lod-img{
+.log-img{
     background-color: #ffffffb4;
     display: flex;
     justify-content: center;
@@ -29,6 +29,7 @@ body{
     position: absolute;
     align-content: center;
     text-align: center;
+    top: 10px;
 }
 
 .search{
