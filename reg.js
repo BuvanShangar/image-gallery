@@ -61,13 +61,13 @@ async function register(){
         <div class="login">
         <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div>
         
-        <h2>Invalid Login</h2>
-        <h2>Go back to register</h2>
+        <h2>Registered successfully</h2>
+        <h2>Go back to Login</h2>
     
       
         
         <div class="button-container">
-          <a href="reg.html" type="button" class="button">Register</a>
+          <a href="login.html" type="button" class="button">Login</a>
         </div>`;
       }
      // console.log(window.location);

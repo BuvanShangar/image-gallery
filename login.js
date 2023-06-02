@@ -73,7 +73,7 @@ async function login(){
     console.log(object.body);
     let data = JSON.parse(object.body);
     console.log(data[0]);
-    alert("Invalid Credentials");
+    alert("Login successfully");
     sessionStorage.setItem("user",data[0].username);
    console.log(sessionStorage.getItem("user"));
   window.location="./uvpage.html";
