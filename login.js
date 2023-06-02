@@ -1,12 +1,9 @@
 
 function validateForm() {
-  console.log("hello");
-    //var email = document.forms["loginForm"]["username"].value;
-    //var password = document.forms["loginForm"]["password"].value;
     var email = document.getElementById("Uname").value;
     var password = document.getElementById("pwd").value;
     if (email == "") {
-      alert("Please enter your username.");
+      alert("Please enter your username...");
       return false;
     }else if (password == "") {
       alert("Please enter your password.");
@@ -15,17 +12,18 @@ function validateForm() {
       login();
     }
   }
+
 async function login(){
-  console.log("hello");
- 
-  //var email = document.forms["loginForm"]["username"].value;
-  //var password = document.forms["loginForm"]["password"].value;
+
     var email = document.getElementById("Uname").value;
+    
     var password = document.getElementById("pwd").value;
-  let formData = {
+    
+    let formData = {
     "email": `${email}`,
     "password": `${password}`
   };
+  
   document.getElementById("body-container").innerHTML=`<div class="loader" id="loader">
                       <div class="log-img" style="background-color: rgba(217, 217, 217, 0.666); border-radius: 24px;">
                       <img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="300px" srcset="" class=""><br>

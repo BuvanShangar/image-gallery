@@ -148,7 +148,7 @@ body{
 }
 #loader{
     position:absolute;
-    top: 50%;
+    top: 200px;
 width: 100%;
 /* marhin: 0px 10px 0px 10px; */
 /* height: 129vh; */

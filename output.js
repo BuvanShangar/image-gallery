@@ -40,14 +40,14 @@ async function fun(){
       };
     });
   };
-  // const Nam = document.getElementById("name").value;
+  //const Nam = document.getElementById("name").value;
   const Tit = document.getElementById("title").value;
   const Img = document.getElementById("uploadInput");
   const ImgName = await ConvertToBase64(Img.files[0]);
   const Des = document.getElementById("Description").value;
 
   let formData = {
-    // "name": `${Nam}`,
+    "name": `${sessionStorage.getItem("user")}`,
     "title": `${Tit}`,
     "image": `${ImgName}`,
     "description":`${Des}`
@@ -60,19 +60,19 @@ async function fun(){
     body: JSON.stringify(formData)
   };
 
- await fetch("http://localhost:3000/post", configObj)
+ await fetch("https://image-generator-api-render.onrender.com/post", configObj)
 
     .then(async function (response) {
       return await response.json();
     })
     .then(async function (object) {
-      element0.style.opacity = "hidden";
+      element0.style.visibility = "hidden";
       element1.style.visibility = "visible" ;
      let aa= await document.getElementById("forms").reset();
      await console.log(object);
     })
     .catch(async function (error) {
-      element0.style.opacity = "hidden";
+      element0.style.visibility = "hidden";
       element1.style.visibility = "visible" ;
      await alert("Bad things! Ragnarők!");
     await  console.log(error.message);
