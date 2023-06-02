@@ -71,17 +71,28 @@ document.getElementById("body-container").innerHTML=`<div class="loader" id="loa
                 <h4>by ${obj.user.first_name}</h4>
       
                 <div class="btn-container">
-                  <div href="" class="button1">♡</div>
-                  <a  href="${obj.links.download_location}" download="${obj.links.download}.jpg" class="button1">
+                <div>
+                  <button onclick="like('${obj.id}')" class="button1" id="${obj.id}">♡</div>
+                  <a  href="https://unsplash.com/photos/${obj.id}/download?force=true"  class="button1">
                     <img
                       src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
                       width="25px"
                       height="25px"
                     />
                   </a>
-                  <div href="" class="button1">➦</div>
+                  <button onclick="myFunction('${obj.urls.regular}')" class="button1">➦</button>
+                  <div>
                 </div>
               </div>
             </div>`;
               console.log("end");}
         };})};
+       function like(id){
+        document.getElementById(id).innerHTML="❤";
+       }
+       function myFunction(...text) {
+        var copyText = text;
+        navigator.clipboard.writeText(copyText);
+        alert("image copied");
+        
+      }

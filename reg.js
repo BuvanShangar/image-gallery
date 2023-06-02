@@ -51,7 +51,10 @@ async function register(){
     {     console.log(object.body);
       // if(comparevalue=Object.body.localeCompare(valid Credentials)){
         if(object.body==="valid Credentials"){
-        window.location="./uvpage.html";
+          sessionStorage.setItem("user",username);
+   console.log(sessionStorage.getItem("user"));
+  window.location="./uvpage.html";
+        // window.location="./uvpage.html";
       //  console.log(window.location);
       }
       else{
@@ -72,3 +75,4 @@ async function register(){
       }
      // console.log(window.location);
     })};
+    

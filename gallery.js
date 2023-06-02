@@ -37,13 +37,13 @@ cont.forEach(cont => {
           return await response.json();
         })
         .then(async function (object)
-        {    console.log("hello");
+        {    console.log("working...");
             let json=JSON.parse( object.body);
 
             var a=document.getElementById("body-container").innerHTML="";
             for(let i = 0; i < json.length; i++) {
                 let obj = json[i];
-                console.log(obj.image);
+               // console.log(obj.image);
                 //console.log("hello");
               //console.log(json);
               document.getElementById("body-container").innerHTML+= `<div class="cont">
@@ -62,7 +62,7 @@ cont.forEach(cont => {
                 <h4>by ${obj.name}</h4>
       
                 <div class="btn-container">
-                  <div href="" class="button1">♡</div>
+                <button onclick="like('${obj.id}')" class="button1" id="${obj.id}">♡</div>
                   <a href="${obj.image}" download="${obj.title}.jpg" class="button1">
                     <img
                       src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
@@ -70,7 +70,7 @@ cont.forEach(cont => {
                       height="25px"
                     />
                   </a>
-                  <div onclick="window.plugins.socialsharing.shareViaInstagram('Message via Instagram', ${obj.image})" class="button1">➦</div>
+                  <button onclick="myFunction('${obj.image}')" class="button1">➦</button>
                 </div>
               </div>
             </div>`;
@@ -79,3 +79,13 @@ cont.forEach(cont => {
 
     })};
      
+    function myFunction(...text) {
+      var copyText = text;
+      navigator.clipboard.writeText(copyText);
+      alert("image copied");
+      
+    }
+    function like(id){
+      document.getElementById(id).innerHTML="❤";
+     }
+    

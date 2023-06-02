@@ -25,7 +25,7 @@
         <div class="cont">World's scenic view at your fingertips</div>
         <div class="search">
             <a class="btn" href="./search.html" style="text-decoration: none;"> Search</a>
-            <a class="btn" href="./login.html" style="text-decoration: none;"> Upload</a>
+            <button class="btn" onclick="pages()" style="text-decoration: none;"> Upload</button>
             <a class="btn" href="./unsplash-page.html" style="text-decoration: none;"> Generate</a>
           
 
@@ -33,7 +33,16 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
-<script>var textWrapper = document.querySelector('.ml2');
+<script>
+function pages(){
+if(sessionStorage.getItem("user")===""){
+  window.location="./login.html";
+
+}else{
+  window.location="./output.html"
+}
+};
+var textWrapper = document.querySelector('.ml2');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: true})

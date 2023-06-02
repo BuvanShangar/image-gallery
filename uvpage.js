@@ -65,7 +65,7 @@ let configObj = {
                     width="25px"
                     height="25px"
                   /> </button>
-                <div href="" class="button1">➦</div>
+                  <button onclick="myFunction('${obj.image}')" class="button1">➦</button>
               </div>
             </div>
           </div>`;
@@ -85,3 +85,10 @@ console.log(id);
       userload();
     })
   };
+
+  function myFunction(...text) {
+    var copyText = text;
+    navigator.clipboard.writeText(copyText);
+    alert("image copied");
+    
+  }  

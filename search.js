@@ -64,7 +64,7 @@ async function search(){
                 <h4>by ${obj.name}</h4>
       
                 <div class="btn-container">
-                  <div href="" class="button1">♡</div>
+                <button onclick="like('${obj.id}')" class="button1" id="${obj.id}">♡</div>
                   <a href="${obj.image}" download="${obj.title}.jpg" class="button1">
                     <img
                       src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
@@ -72,7 +72,7 @@ async function search(){
                       height="25px"
                     />
                   </a>
-                  <div href="" class="button1">➦</div>
+                  <button onclick="myFunction('${obj.image}')" class="button1">➦</button>
                 </div>
               </div>
             </div>`;
@@ -80,3 +80,12 @@ async function search(){
              }
 
     })};
+    function myFunction(...text) {
+      var copyText = text;
+      navigator.clipboard.writeText(copyText);
+      alert("image copied");
+      
+    }
+    function like(id){
+      document.getElementById(id).innerHTML="❤";
+     }
