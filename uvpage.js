@@ -65,13 +65,6 @@ let configObj = {
                     width="25px"
                     height="25px"
                   /> </button>
-                <div href="${obj.image}" download="${obj.title}.jpg" class="button1">
-                  <img
-                    src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
-                    width="25px"
-                    height="25px"
-                  />
-                </div>
                 <div href="" class="button1">➦</div>
               </div>
             </div>
