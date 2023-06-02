@@ -39,8 +39,8 @@ async function fun(){
         reject(error);
       };
     });
-  }
-  const Nam = sessionStorage.getItem("user");
+  };
+  const Nam = document.getElementById("name").value;
   const Tit = document.getElementById("title").value;
   const Img = document.getElementById("uploadInput");
   const ImgName = await ConvertToBase64(Img.files[0]);
@@ -60,7 +60,7 @@ async function fun(){
     body: JSON.stringify(formData)
   };
 
- await fetch("https://image-generator-api-render.onrender.com/post", configObj)
+ await fetch("http://localhost:3000/post", configObj)
 
     .then(async function (response) {
       return await response.json();

@@ -59,7 +59,12 @@ let configObj = {
               <h4>by ${obj.name}</h4>
     
               <div class="btn-container">
-                <button onclick="deletee('${obj._id}')" class="button1">♡</button>
+                <button onclick="deletee('${obj._id}')" class="button1">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/3405/3405244.png"
+                    width="25px"
+                    height="25px"
+                  /> </button>
                 <div href="${obj.image}" download="${obj.title}.jpg" class="button1">
                   <img
                     src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
