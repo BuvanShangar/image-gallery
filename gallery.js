@@ -62,7 +62,8 @@ cont.forEach(cont => {
                 <h4>by ${obj.name}</h4>
       
                 <div class="btn-container">
-                <button onclick="like('${obj.id}')" class="button1" id="${obj.id}">♡</div>
+
+                <button onclick="like('${obj.id}')" class="button1" id="${obj.id}">♡</button>
                   <a href="${obj.image}" download="${obj.title}.jpg" class="button1">
                     <img
                       src="https://img.icons8.com/?size=512&id=Ezk6WeFucgyE&format=png"
