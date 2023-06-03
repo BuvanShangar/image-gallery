@@ -35,11 +35,12 @@
 </body>
 <script>
 function pages(){
-if(sessionStorage.getItem("user")===""){
+if(sessionStorage.getItem("user")===null){
   window.location="./login.html";
-
+console.log(sessionStorage.getItem("user"));
 }else{
-  window.location="./output.html"
+  console.log(sessionStorage.getItem("user"));
+  window.location="./output.html";
 }
 };
 var textWrapper = document.querySelector('.ml2');
