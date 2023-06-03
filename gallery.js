@@ -43,9 +43,7 @@ cont.forEach(cont => {
             var a=document.getElementById("body-container").innerHTML="";
             for(let i = 0; i < json.length; i++) {
                 let obj = json[i];
-               // console.log(obj.image);
-                //console.log("hello");
-              //console.log(json);
+               
               document.getElementById("body-container").innerHTML+= `<div class="cont">
               <img
                 src="${obj.image}"

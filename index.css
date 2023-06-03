@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Oswald:wght@400;500&family=Playfair+Display:ital,wght@1,500&family=Roboto+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 *{
     margin:0 0 0 0;
-   /* font-family: 'Playfair Display', serif; */
-   /* font-family: 'DM Serif Display', serif; */
-/* font-family: 'Oswald', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Roboto Mono', monospace; */
+  
 }
 .header{
     position: fixed;
@@ -39,12 +35,7 @@ font-family: 'Roboto Mono', monospace; */
 .nav-btn:hover{
     color:darkgray;
 }
-/* .nav-btn:active {
-    background-color:#bccad6 ;
-    box-shadow: 0px 2px 0px #030303;
-    position: relative;
-    top: 2px;
-} */
+
 .logo{
     margin-left:20px;
     
@@ -54,13 +45,13 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;s
+    background-attachment: fixed;
 }
 
 .hero{
      display: flex;
      align-items: center;
-   justify-content: center;
+     justify-content: center;
      width: 100%;
      height: 100vh;
     background-color:#03060800 ;
@@ -69,10 +60,7 @@ body{
     align-content: center;
     
 }
-/* .search{
-  /* margin-top: 200px;   
-   
-} */
+
 .search-bar{
  all:unset;
  color: rgb(9, 5, 5);
@@ -135,19 +123,6 @@ body{
     to {left: 300px;}
 }
 .heading{
-    /* background: url(https://thumbs.gfycat.com/RegularAmbitiousChinchilla-size_restricted.gif)   -20px -20px no-repeat;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    /* Below is not needed */
-    /* display:block;
-    font-size: 200px; */
-    /* font-family:Arial; */
-    /* text-align: center;
-    margin-top: -20px;
-    font-weight: bold;
-    letter-spacing: -25px;
-    background-size: cover; */
     color:rgba(255, 255, 0, 0.884);
     text-align: center;
     font-size: 90px;

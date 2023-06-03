@@ -10,7 +10,6 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 .header{
-    /* position: fixed; */
     display: flex;
     align-items: center;
     justify-content: space-between;    
@@ -38,12 +37,6 @@ background-size: cover;
 .nav-btn:hover{
     color:white;
 }
-/* .nav-btn:active {
-    background-color:#bccad6 ;
-    box-shadow: 0px 2px 0px #030303;
-    position: relative;
-    top: 2px;
-} */
 .web-name{
     font-size:x-large;
     font-weight: 900;

@@ -150,8 +150,7 @@ body{
     position:absolute;
     top: 200px;
 width: 100%;
-/* marhin: 0px 10px 0px 10px; */
-/* height: 129vh; */
+
 background-color: rgba(255, 255, 255, 0); 
 display: flex;
 align-items: center;
@@ -160,13 +159,11 @@ flex-direction: column;
 flex-wrap: nowrap;
 margin-top: 200px;
 
-/* visibility: hidden; */
 
 }
 .log-img{
     background-color: #ffffffb4;
     display: flex;
-/* align-items: center; */
 justify-content: center;
 flex-direction: column;
     position: absolute;

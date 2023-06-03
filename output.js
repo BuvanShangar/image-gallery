@@ -27,7 +27,6 @@ async function fun(){
   var element1 =await document.getElementById("body-continer");
         element1.style.visibility = "hidden" ;      
 
-  //await document.getElementsByClassName("loader").css('background-color', 'grey');
   function ConvertToBase64(file) {
     return new Promise((resolve, reject) => {
       const filereader = new FileReader();
@@ -40,7 +39,6 @@ async function fun(){
       };
     });
   };
-  //const Nam = document.getElementById("name").value;
   const Tit = document.getElementById("title").value;
   const Img = document.getElementById("uploadInput");
   const ImgName = await ConvertToBase64(Img.files[0]);
@@ -77,7 +75,6 @@ async function fun(){
       element1.style.visibility = "visible" ;
      await alert("Bad things! Ragnarők!");
      window.location="./uvpage.html";
-   // await  console.log(error.message);
     });
 };
 

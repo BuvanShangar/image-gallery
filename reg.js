@@ -48,17 +48,13 @@ async function register(){
       return await response.json();
     })
     .then(async function (object)
-    {     console.log(object.body);
-      // if(comparevalue=Object.body.localeCompare(valid Credentials)){
+    {   
         if(object.body==="valid Credentials"){
           sessionStorage.setItem("user",username);
    console.log(sessionStorage.getItem("user"));
   window.location="./uvpage.html";
-        // window.location="./uvpage.html";
-      //  console.log(window.location);
       }
       else{
-        //alert("Invalid Credentials");
         document.getElementById("body-container").innerHTML=`
         <form >
         <div class="login">
@@ -73,6 +69,5 @@ async function register(){
           <a href="login.html" type="button" class="button">Login</a>
         </div>`;
       }
-     // console.log(window.location);
     })};
     

@@ -1,7 +1,4 @@
-// window.onbeforeunload = function() {
-//     localStorage.removeItem(key);
-//     return '';
-//   };
+
 let configObj = {
   method: "GET",
   headers: {
@@ -41,7 +38,6 @@ let configObj = {
           for(let i = 0; i < json.length; i++) {
               let obj = json[i];
               console.log(obj.image);
-             // console.log("hello");
             console.log(json);
             document.getElementById("body-container").innerHTML+= `<div class="cont">
             <img

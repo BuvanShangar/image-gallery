@@ -1,35 +1,14 @@
-// const cont= document.querySelectorAll(".cont");
-// const observer = new IntersectionObserver(
-//     entries => {
-//         entries.forEach(entry => {
-//             entry.target.classList.toggle("show",entry.isIntersecting);
-//             if(entry.isIntersecting) observer.unobserve(entry.target)
-//         })
-//     },
-//     {
-//         threshold: 0,
-//     }
-// )
-// cont.forEach(cont => {
-//         observer.observe(cont)
-//     })
+
     
 
 async function generate(){
       var search = document.getElementById("search").value;      
-//console.log(username);
 let configObj = {
   method: "GET",
   headers: {
     "Content-Type": "application/json",
   }
-  //,
-  // body:{
-  //   client_id:"Lit6CmPbDpMfc6suXVJ9IdPibYV3TTxpWcazLE8wBQM",
-  //   query:`${search}`,
-  //   count:15
 
-  // }
 };
 document.getElementById("body-container").innerHTML=`<div class="loader" id="loader">
                           <div class="log-img" style="background-color: rgba(217, 217, 217, 0.666); border-radius: 24px;">
@@ -52,9 +31,6 @@ document.getElementById("body-container").innerHTML=`<div class="loader" id="loa
             var a=document.getElementById("body-container").innerHTML="";
             for(let i = 0; i < json.length; i++) {
                 let obj = json[i];
-               // console.log(obj.image);
-               // console.log("hello");
-              console.log(json);
               document.getElementById("body-container").innerHTML+= `<div class="cont">
               <img
                 src="${obj.urls.regular}"
