@@ -28,7 +28,7 @@ let configObj = {
                         </div>
                       </div>`;
 
-      await fetch("https://image-generator-api-render.onrender.com/get", configObj)
+      await fetch("https://image-generator-api-render.onrender.com/get/user", configObj)
       .then(async function (response) {
         console.log(response);
         return await response.json();
