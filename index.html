@@ -13,8 +13,8 @@
         <div class="web-name">IMAGE GENERATOR</div>
         <div class="logo"><img src="./Screenshot from 2023-05-08 18-46-14.png" alt="" sizes="" width="150px" srcset=""></div>
         <div class="nav">
-            <a href="login.html" class="nav-btn">Login</a>
-            <a href="gallery.html" class="nav-btn">Gallery</a>
+          <button onclick="pages1()" class="nav-btn">Login</button>
+            <button onclick="window.location='gallery.html'" class="nav-btn">Gallery</button>
         </div>
     </div>
 
@@ -41,6 +41,15 @@ console.log(sessionStorage.getItem("user"));
 }else{
   console.log(sessionStorage.getItem("user"));
   window.location="./output.html";
+}
+};
+function pages1(){
+if(sessionStorage.getItem("user")===null){
+  window.location="./login.html";
+console.log(sessionStorage.getItem("user"));
+}else{
+  console.log(sessionStorage.getItem("user"));
+  window.location="./uvpage.html";
 }
 };
 var textWrapper = document.querySelector('.ml2');

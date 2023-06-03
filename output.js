@@ -69,13 +69,15 @@ async function fun(){
       element0.style.visibility = "hidden";
       element1.style.visibility = "visible" ;
      let aa= await document.getElementById("forms").reset();
+     window.location="./uvpage.html";
      await console.log(object);
     })
     .catch(async function (error) {
       element0.style.visibility = "hidden";
       element1.style.visibility = "visible" ;
      await alert("Bad things! Ragnarők!");
-    await  console.log(error.message);
+     window.location="./uvpage.html";
+   // await  console.log(error.message);
     });
 };
 

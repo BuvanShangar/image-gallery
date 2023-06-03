@@ -64,6 +64,7 @@ async function search(){
                 <h4>by ${obj.name}</h4>
       
                 <div class="btn-container">
+                <div>
                 <button onclick="like('${obj.id}')" class="button1" id="${obj.id}">♡</div>
                   <a href="${obj.image}" download="${obj.title}.jpg" class="button1">
                     <img
@@ -73,6 +74,7 @@ async function search(){
                     />
                   </a>
                   <button onclick="myFunction('${obj.image}')" class="button1">➦</button>
+                </div>
                 </div>
               </div>
             </div>`;
